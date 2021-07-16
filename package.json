@@ -1,0 +1,27 @@
+{
+  "name": "@team/errors",
+  "version": "0.0.1",
+  "description": "\"Error reporting tools for Team DriveAway\"",
+  "main": "index.js",
+  "repository": "git@github.com:erich-team/errors-js.git",
+  "author": "Erich L Timkar <32959497+erich-team@users.noreply.github.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@airbrake/node": "^2.1.5",
+    "ava": "^3.15.0"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "ava": {
+    "files": [
+      "!*/**/before.js",
+      "!*/**/asserts.js"
+    ],
+    "environmentVariables": {
+      "ENV": "test",
+      "AIRBRAKE_PROJECT_ID": "340609",
+      "AIRBRAKE_PROJECT_KEY": "a92aaa742f92e4931be0736488177485"
+    }
+  }
+}

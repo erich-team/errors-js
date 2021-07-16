@@ -1,0 +1,7 @@
+yarn version --$1
+mkdir -p ./dist
+tarfile=team-${PWD##*/}.tgz
+yarn --production=true --check-files
+rm -f ./dist/$tarfile
+tar -czf ./dist/$tarfile --exclude='./dist'  --exclude='./test' ./*
+package_cloud push erichteam/node/node/$1 ./dist/$tarfile
