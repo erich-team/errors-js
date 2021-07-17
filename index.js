@@ -12,7 +12,7 @@ airbrake.addFilter((notice) => {
 });
 
 const logAndNotify = (error)=>{
-  console.log(error);
+  console.error(error);
   airbrake.notify(error);
   return error;
 }
