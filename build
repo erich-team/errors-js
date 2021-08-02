@@ -1,3 +1,8 @@
+if [ $# -ne 1 ]; then
+  echo 1>&2 "Usage: $0 [major|minor|patch]"
+  exit 3
+fi
+
 yarn version --$1
 mkdir -p ./dist
 tarfile=team-${PWD##*/}.tgz
