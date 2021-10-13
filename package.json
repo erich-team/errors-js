@@ -1,6 +1,6 @@
 {
   "name": "@team/errors",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "\"Error reporting tools for Team DriveAway\"",
   "main": "index.js",
   "repository": "git@github.com:erich-team/errors-js.git",
