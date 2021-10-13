@@ -7,7 +7,7 @@
   "author": "Erich L Timkar <32959497+erich-team@users.noreply.github.com>",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@airbrake/node": "^2.1.5",
+    "@airbrake/node": "^2.1.7",
     "ava": "^3.15.0"
   },
   "scripts": {
